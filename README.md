@@ -1,5 +1,5 @@
 ## Overview
-Hello there! Welcome to the GitHub page for the JCURA 2024 project "Mountains of Confusion: Evaluating Image Enhancement to Improve AI Landscape Classification" by Larissa Bron. 
+Hello there! Welcome to the GitHub page for the JCURA 2024 project "Mountains of Confusion: Evaluating Image Enhancement to Improve AI Landscape Classification" by Larissa Bron. I wanted to expand the condensed information in the academic poster on GitHub in lieu of another published format to communicate my experimental methods and provide a unified repository of the code, data, and image sets that were used. 
 
 ## Background
 The [Mountain Legacy Project](https://mountainlegacy.ca/) (MLP) works with the largest systematic collection of mountain photographs in the world ([browse the collection](https://explore.mountainlegacy.ca/)). More than 10,000 historic images have been repeated to quantify landscape change over time. 
@@ -16,7 +16,8 @@ In Summer 2023, Larissa Bron worked alongside Kristyn Lang on improving PyLC as 
 ### 1. Updating the PyLC Test Image Set
 PyLC was trained using 95 images from two researcher's work, [Fortin (2018)](https://dspace.library.uvic.ca/items/0a911eb0-53bf-4a82-a75a-8b6949c28edd) and [Jean et al. (2015)](https://ieeexplore.ieee.org/document/7045940), and tested with 19 images that were a combination of 11 images from Fortin and Jean withheld from training and 8 images from the Landscapes in Motion project [(Higgs et al., (2020))](https://friresearch.ca/publications/advances-visual-applications-visualizing-quantifying-landscape-change-sw-alberta-using). 
 
-The testing image set was updated to: 1) Incorporate images from more geographic areas to improve understanding of the generizability of PyLC to the MLP collection, and 2) Remove images with reference land cover masks with large errors. The updated "2023 Test Image Set" containing images and land cover masks is available from MLP. 
+The testing image set was updated to: 1) Incorporate images from more geographic areas to improve understanding of the generizability of PyLC to the MLP collection, and 2) Remove images with reference land cover masks with large errors to assess whether this was impacting PyLC accuracy. The updated "2023 Test Image Set" containing images and land cover masks is available from MLP. 
 
 ### 2. Applying Image Enhancement to the Test Image Set
+
 

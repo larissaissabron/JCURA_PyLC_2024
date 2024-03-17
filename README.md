@@ -15,3 +15,8 @@ In Summer 2023, Larissa Bron worked alongside Kristyn Lang on improving PyLC as 
 
 ### 1. Updating the PyLC Test Image Set
 PyLC was trained using 95 images from two researcher's work, [Fortin (2018)](https://dspace.library.uvic.ca/items/0a911eb0-53bf-4a82-a75a-8b6949c28edd) and [Jean et al. (2015)](https://ieeexplore.ieee.org/document/7045940), and tested with 19 images that were a combination of 11 images from Fortin and Jean withheld from training and 8 images from the Landscapes in Motion project [(Higgs et al., (2020))](https://friresearch.ca/publications/advances-visual-applications-visualizing-quantifying-landscape-change-sw-alberta-using). 
+
+The testing image set was updated to: 1) Incorporate images from more geographic areas to improve understanding of the generizability of PyLC to the MLP collection, and 2) Remove images with reference land cover masks with large errors. The updated "2023 Test Image Set" containing images and land cover masks is available from MLP. 
+
+### 2. Applying Image Enhancement to the Test Image Set
+

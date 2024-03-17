@@ -30,4 +30,21 @@ If you would like to try using PyLC, there are instructions on the [PyLC GitHub]
 ### 4. Comparing PyLC Accuracy Between Image Sets
 PyLC accuracy metrics were compared at two nested levels with each image - individual land cover categories and averaged over an image. The reported PyLC accuracy metrics for individual images is an un-averaged F1 score for each land cover category, as well as the averaged accuracy metrics considering all land cover categories for the image. The averaged accuracy metrics are Matthew's Correlation Coefficient, Weighted Average F1 score, and an Inverse-Weighted Intersection Over Union. 
 
-I chose to compare the median accuracy for land cover categories and the median averaged accuracy metrics using boxplots in R because my accuracy metrics did not easily fit into a standard statistical test. When I followed an undergrad stats flowchart (ex., [Stats and R Flowchart: What Statistical Test Should I Do?](https://statsandr.com/blog/what-statistical-test-should-i-do/)), I was lead to using the Wilcoxon Sign-Ranked Test, yet I wasn't able to satisfy all of the assumptions ([Wilcoxon Sign-Ranked Test](https://pythonfordatascienceorg.wordpress.com/wilcoxon-sign-ranked-test-python/)). 
+I chose to compare the median accuracy for land cover categories and the median averaged accuracy metrics using boxplots in R because my accuracy metrics did not easily fit into a standard statistical test. When I followed an undergrad stats flowchart (ex., [Stats and R Flowchart: What Statistical Test Should I Do?](https://statsandr.com/blog/what-statistical-test-should-i-do/)), I was lead to using the Wilcoxon Sign-Ranked Test, yet I wasn't able to satisfy all of the assumptions ([Wilcoxon Sign-Ranked Test](https://pythonfordatascienceorg.wordpress.com/wilcoxon-sign-ranked-test-python/)). This realization also lined up with re-learning that null hypothesis significance testing might not tell us much about data (Ex., [Johnson, 1980](https://www.jstor.org/stable/3802789)), so I opted to visualize the output instead. 
+
+----- Under construction! -----
+
+(Make all accessible above)
+- Turned the PyLC output into something easier to work with
+- Put together .csv files of everything
+- R code for visualization
+
+### 4. Results
+- PyLC responds to enhancements. How you compared images using Affinity Photo 2. What you saw overall. Example from the poster up above (maybe it can be a pdf of them together) + the affinity photo 2 file.
+- Comparing median accuracy metrics. Graphs above?
+
+### 5. Discussion 
+- Don't forget the references in text.
+
+### 6. Acknowledgements
+- Include expanded ack. about the use of the images

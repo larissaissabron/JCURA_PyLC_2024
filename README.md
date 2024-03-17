@@ -20,10 +20,5 @@ The testing image set was updated to: 1) Incorporate images from more geographic
 ### 2. Applying Image Enhancement to the Test Image Set
 Three common categories of image enhancements involve adjustments to contrast, sharpness, and noise in images ([Liu, 2022](https://www.sciencedirect.com/science/article/abs/pii/S1051200422001646#se0070); [Pei, 2023](https://www.sciencedirect.com/science/article/pii/S0264127523005014#b0140)). 
 
-The steps involved in image enhancements were:
-
-2a. Sourcing image enhancements that could be coded simply in a Jupyter notebook using Python code. Working with code allowed for more control of how enhancements were applied and made it so that the same enhancement could be applied to each image simultaneously (which is difficult in programs like Photoshop). 
-
-2b. 
-
+Image enhancements were chosen that could be coded simply in a Jupyter notebook using Python code. Working with code allowed for more control of how enhancements were applied and made it so that the same enhancement could be applied to each image simultaneously (which is difficult in programs like Photoshop). I developed an [Image Enhancement Jupyter notebook](JCURA_PyLC_2024/JCURA2024_ImageEnhancementCode.ipynb).
 

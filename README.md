@@ -12,3 +12,5 @@ To address this bottleneck, the [Python Landscape Classification](https://github
 In Summer 2023, Larissa Bron worked alongside Kristyn Lang on improving PyLC as undergraduate research assistants. While Kristyn approached improving PyLC through updating the training process, Larissa experimented with image enhancement to improve PyLC accuracy with the hypothesis "Improving the appearance of ecosystems in images by applying image enhancements will clarify ecosystem characteristics, improving PyLC accuracy for classification." This hypothesis follows MLP researcher experience since 2013 in which manual ecosystem mapping was made easier by changing image conditions to better visualize the differences between ecosystem types. 
 
 # Methods
+## Heading 2
+### Heading 3

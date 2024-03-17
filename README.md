@@ -39,12 +39,12 @@ I chose to compare the median accuracy for land cover categories and the median 
 - Put together .csv files of everything
 - R code for visualization
 
-## 4. Results
+## Results
 - PyLC responds to enhancements. How you compared images using Affinity Photo 2. What you saw overall. Example from the poster up above (maybe it can be a pdf of them together) + the affinity photo 2 file.
 - Comparing median accuracy metrics. Graphs above?
 
-## 5. Discussion 
+## Discussion 
 - Don't forget the references in text.
 
-## 6. Acknowledgements
+## Acknowledgements
 - Include expanded ack. about the use of the images

@@ -14,4 +14,4 @@ In Summer 2023, Larissa Bron worked alongside Kristyn Lang on improving PyLC as 
 ## Methods
 
 ### 1. Updating the PyLC Test Image Set
-PyLC was trained using images from two researcher's work, Fortin (2016) and Jean (2015), 
+PyLC was trained using 95 images from two researcher's work, [Fortin (2018)](https://dspace.library.uvic.ca/items/0a911eb0-53bf-4a82-a75a-8b6949c28edd) and [Jean et al. (2015)](https://ieeexplore.ieee.org/document/7045940), and tested with 19 images that were a combination of 11 images from Fortin and Jean withheld from training and 8 images from the Landscapes in Motion project [(Higgs et al., (2020))](https://friresearch.ca/publications/advances-visual-applications-visualizing-quantifying-landscape-change-sw-alberta-using). 

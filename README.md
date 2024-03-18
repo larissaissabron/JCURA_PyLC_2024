@@ -49,4 +49,4 @@ Changing the way images appear may hinder PyLC which was trained on only 95 imag
 Since the image enhancements affect how PyLC interprets the ecosystems in an image, they could be employed in the PyLC pipeline as additional data augmentation. Data augmentation is a method to artificially increase the amount of training data available by altering the training data set and adding the altered versions to training (Reference). Data augmentation has been shown to increase model generizability while decreasing the number of manually annotated land cover masks needed (Reference).  
 
 ## Acknowledgements
-- Include expanded ack. about the use of the images
+This research was supported by the Jamie Cassels Undergraduate Research Awards (JCURA) and supervised by Dr. Eric Higgs from the Mountain Legacy Project. I am grateful for the opportunity to carry out research on WSANEC and Lekwungen lands. Thank you to my supervisor and the MLP lab team for the support, as well as the incredible librarians, researchers, and students at UVic for navigating image enhancements, AI, quantifying AI accuracy, and stats conversations over the past year. 

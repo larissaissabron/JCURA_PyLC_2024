@@ -20,7 +20,7 @@ The testing image set was updated to: 1) Incorporate images from more geographic
 ### 2. Applying Image Enhancement to the Test Image Set
 Three common categories of image enhancements involve adjustments to contrast, sharpness, and noise in images ([Liu, 2022](https://www.sciencedirect.com/science/article/abs/pii/S1051200422001646#se0070); [Pei, 2023](https://www.sciencedirect.com/science/article/pii/S0264127523005014#b0140)). Within these three categories, enhancements were chosen that can be implemented using a Jupyter notebook, require limited computer processing, have available and easy to use code, work on our image collection, and have support from previous research papers. The nine methods I chose were within the many approaches to image enhancements, as reviewed in [Gonzales and Wood (2019)](https://dl.icdst.org/pdfs/files4/01c56e081202b62bd7d3b4f8545775fb.pdf), [Liu (2022)](https://www.sciencedirect.com/science/article/abs/pii/S1051200422001646#se0070), and [Qi (2022)](https://link.springer.com/article/10.1007/s11831-021-09587-6). 
 
-The [Image Enhancement Jupyter notebook](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/JCURA2024_ImageEnhancementCode.ipynb) that can be used with the [test image set](https://zenodo.org/records/10827942?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImQxZmJjNThlLTBhYmMtNDFlNC1hNzEyLTRmN2Q5ZDBmYjk0NCIsImRhdGEiOnt9LCJyYW5kb20iOiJiMzBkZDJiOGRiOTE1YjQ3NmQ1YzlmYjE4ZWI0YjhmOSJ9.pIpAVBCVxQtuO7YLUgFzyJqd7uvoYQ80QfVYuiDsXcXl5Kbmhhr6bybNTYg-6S0n2dsBEUZjGR-lR6-2Vr1ZOA). The resulting images that I worked with are available from MLP in the "PyLCShared2023" folder. 
+The [Image Enhancement Jupyter notebook](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/JCURA2024_ImageEnhancementCode.ipynb) that can be used with the [test image set](https://zenodo.org/records/10827942?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImQxZmJjNThlLTBhYmMtNDFlNC1hNzEyLTRmN2Q5ZDBmYjk0NCIsImRhdGEiOnt9LCJyYW5kb20iOiJiMzBkZDJiOGRiOTE1YjQ3NmQ1YzlmYjE4ZWI0YjhmOSJ9.pIpAVBCVxQtuO7YLUgFzyJqd7uvoYQ80QfVYuiDsXcXl5Kbmhhr6bybNTYg-6S0n2dsBEUZjGR-lR6-2Vr1ZOA). The resulting images that I worked from each image enhancement with are available from MLP in the "PyLCShared2023" folder. 
 
 ### 3. Testing Enhanced Images with PyLC
 The testing set (unenhanced baseline) and the nine enhanced versions of the testing set were each individually ran through PyLC using grayscale model 2-3 through the command line (Terminal) on a Mac. After running images through, PyLC provides a landcover mask for each image alongside accuracy readouts that compare PyLC's masks to the manually annotated reference masks. Each image set was run through twice to get accuracy readouts that were individual to each image (no flag) and averaged over each image set (--aggregate_metrics flag). 
@@ -34,16 +34,12 @@ I chose to compare the median accuracy for land cover categories and the median 
 
 Comparing the accuracy metrics required data cleaning where first the .json accuracy metric files from PyLC were converted to .csv files using [this code](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/JCURA2024_PyLCAccuracy_JSONtoCSV.ipynb) for each image set. Then, two .csv files were collated and prepared in the "tidy" data format for R: 1) [Averaged accuracy metrics](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/image_mcc_wmf1_iwmiou.csv), and 2) [F1 scores for land cover categories](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/img_en_lccf1.csv). The datasets were visualized multiple ways using R Studio and then [boxplots were created for the JCURA poster](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/JCURA2024_BoxplotsRScript.R) as they most clearly showed how PyLC accuracy fluctuated with each image enhancement. 
 
------ Under construction! -----
-
-(Make all accessible above)
-- Turned the PyLC output into something easier to work with
-- Put together .csv files of everything
-- R code for visualization
-
 ## Results
-- PyLC responds to enhancements. How you compared images using Affinity Photo 2. What you saw overall. Example from the poster up above (maybe it can be a pdf of them together) + the affinity photo 2 file.
-- Comparing median accuracy metrics. Graphs above?
+Comparing whether PyLC accuracy changed with each image enhancement involved a qualitative review of the PyLC generated land cover masks and a quantitative assessment of the median accuracy. 
+
+The qualitative review of PyLC land cover masks showed that each enhancement changed how PyLC interpreted each image, however it wasn't clear whether there was an improvement to whole images or any land cover category from the enhancements. 
+
+The quantitative review of the median accuracy supported these findings as each image enhancement only changed each accuracy metric in either a neutral or negative way. For the land cover categories, no image enhancement consistently improved the F1 score which is opposite to the goal of getting each category to achieve F1 scores comparable to Not Categorized and Conifer Forest. As well, even though the averaged accuracy metrics use different weighting to quantify PyLC accuracy, each showed a similar trend that image enhancements either don't affeect or decrease the accuracy of land cover classification. 
 
 ## Discussion 
 - Don't forget the references in text.

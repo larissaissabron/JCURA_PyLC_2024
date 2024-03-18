@@ -42,7 +42,11 @@ The qualitative review of PyLC land cover masks showed that each enhancement cha
 The quantitative review of the median accuracy supported these findings as each image enhancement only changed each accuracy metric in either a neutral or negative way. For the land cover categories, no image enhancement consistently improved the F1 score which is opposite to the goal of getting each category to achieve F1 scores comparable to Not Categorized and Conifer Forest. As well, even though the averaged accuracy metrics use different weighting to quantify PyLC accuracy, each showed a similar trend that image enhancements either don't affeect or decrease the accuracy of land cover classification. 
 
 ## Discussion 
-- Don't forget the references in text.
+The outcome that image enhancements tended to decrease accuracy yet changed the resulting PyLC land cover mask lends support toward limited model generalization and provides a framework for data augmentation. 
+
+Changing the way images appear may hinder PyLC which was trained on only 95 images [(Rose, 2020)](https://github.com/scrose/pylc), because the model has not "seen" images that have been enhanced by a computer and it may be over-fitted to only the dataset it has reference to (Reference). Efforts to improve PyLC accuracy may benefit more from pivoting away from changing how input images look and toward increasing the number of training images (Reference). 
+
+Since the image enhancements affect how PyLC interprets the ecosystems in an image, they could be employed in the PyLC pipeline as additional data augmentation. Data augmentation is a method to artificially increase the amount of training data available by altering the training data set and adding the altered versions to training (Reference). Data augmentation has been shown to increase model generizability while decreasing the number of manually annotated land cover masks needed (Reference).  
 
 ## Acknowledgements
 - Include expanded ack. about the use of the images

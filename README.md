@@ -25,7 +25,7 @@ Image enhancements were applied separately to the test image set with Python cod
 The resulting images that I used in the accuracy assessment are available from MLP in the "PyLCShared2023" folder. These are not shared in a public repository as it is a very large file!
 
 ### 3. Testing Enhanced Images with PyLC
-The testing set (unenhanced baseline) and the nine enhanced versions of the testing set were each individually ran through PyLC using grayscale model 2-3 through the command line (Terminal) on a Mac. If you would like to try using PyLC, there are instructions in the [PyLC GitHub README](https://github.com/scrose/pylc) for running testing, with some further clarification in [this guide](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/Guide_PyLC%20Testing%20and%20Training.pdf) for running PyLC on the remote Compute Canada server or a personal computer. 
+The testing set (unenhanced baseline) and the nine enhanced versions of the testing set were each individually ran through PyLC using grayscale model 2-3 through the command line (Terminal) on a Mac. If you would like to try using PyLC, there are instructions in the [PyLC GitHub README](https://github.com/scrose/pylc) for running testing, with some further clarification in [this guide](https://github.com/larissaissabron/JCURA_PyLC_2024/blob/main/Guide_PyLCTestingAndTraining.pdf) for running PyLC on a personal computer. 
 
 After running images through, PyLC provides a landcover mask for each image alongside accuracy readouts that compare PyLC's masks to the manually annotated reference masks. Each image set was run through twice to get accuracy readouts that were individual to each image (no flag) and averaged over each image set (--aggregate_metrics flag). 
 

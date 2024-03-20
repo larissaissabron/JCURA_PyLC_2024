@@ -1,5 +1,5 @@
 ## Overview
-Hello there! Welcome to the GitHub page for the JCURA 2024 project "Mountains of Confusion: Evaluating Image Enhancement to Improve AI Landscape Classification" by Larissa Bron. I wanted to expand the condensed format of an academic poster using GitHub in lieu of another published formats to communicate my experimental methods while providing a repository of the code, data, and image sets. 
+Hello there! Welcome to the GitHub page for the JCURA 2024 project ["Mountains of Confusion: Evaluating Image Enhancement to Improve AI Landscape Classification" by Larissa Bron](https://hdl.handle.net/1828/16122). I wanted to expand the condensed format of an academic poster using GitHub in lieu of another published formats to communicate my experimental methods while providing a repository of the code, data, and image sets. 
 
 ## Background
 The [Mountain Legacy Project](https://mountainlegacy.ca/about) (MLP) works with the largest systematic collection of mountain photographs in the world [(browse the collection)](https://explore.mountainlegacy.ca/). More than 10,000 historic images have been repeated to quantify landscape change over time. 
